@@ -43,7 +43,7 @@ public class LinkedList {
 			insertAtStart(data);
 		}
 		else {
-		Node n = head;                             //Traversing
+		Node n = head;                             //Traversing index
 		for(int i = 0 ;i<index-1;i++) {           //for loop for an index
 			n=n.next;		
 		}
@@ -59,8 +59,8 @@ public class LinkedList {
     		head=head.next;
     	}
     	else {
-    		Node n =head;
-    		Node n1=null;
+    		Node n =head;                                //Traversing index
+    		Node n1=null;                                //temp node to be removed
     		for(int i =0 ;i<index-1;i++) {
     			n=n.next;  			
     		}
