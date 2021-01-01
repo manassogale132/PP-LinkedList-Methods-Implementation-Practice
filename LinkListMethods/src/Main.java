@@ -12,8 +12,10 @@ public class Main {
 		list.insertAtStart(2);
 		list.insertAtStart(1);
 		
-	    list.insertAtIndex(5, 50);
+	    list.insertAtIndex(0, 50);
 	    list.insertAtIndex(3, 100);
+	    
+	    list.deleteAt(3);
 		
 		list.show();
 		

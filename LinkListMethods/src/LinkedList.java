@@ -39,15 +39,39 @@ public class LinkedList {
 		node.data=data;
 		node.next=null;
 		
+		if(index==0) {
+			insertAtStart(data);
+		}
+		else {
 		Node n = head;                             //Traversing
 		for(int i = 0 ;i<index-1;i++) {           //for loop for an index
 			n=n.next;		
 		}
 		node.next=n.next;
 		n.next=node;	
+		}
 	}
 	
 	
+    public void deleteAt(int index) {
+    	
+    	if(index == 0) {
+    		head=head.next;
+    	}
+    	else {
+    		Node n =head;
+    		Node n1=null;
+    		for(int i =0 ;i<index-1;i++) {
+    			n=n.next;  			
+    		}
+    		n1=n.next;
+    		n.next=n1.next;
+    	}
+		
+	}
+	
+    
+    
 	public void show() {                                  //Show Method	
 		
 		Node n = head;                                 //Traversing 
@@ -57,5 +81,4 @@ public class LinkedList {
 		}
 		System.out.println(n.data);                    //Printing the last data outside the loop
 	}
-
 }
