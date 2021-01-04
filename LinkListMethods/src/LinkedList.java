@@ -69,17 +69,6 @@ public class LinkedList {
     	}
 		
 	}
+
 	
-    
-    
-	public void show() {                                  //Show Method	
-		
-		Node n = head;                                 //Traversing 
-		while(n.next!=null) {
-			System.out.println(n.data);               //Printing the data inside the loop
-			n=n.next;
-		}
-		System.out.println(n.data);                    //Printing the last data outside the loop
-	
-	}
 }
