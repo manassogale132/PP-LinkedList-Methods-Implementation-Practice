@@ -31,26 +31,6 @@ public class LinkedList {
 		node.next=head;                         //Setting the node to head
 		head=node;	
 	}
-	
-	
-	public void insertAtIndex(int index,int data) {   //Insert at specified index
-		
-		Node node = new Node();                  //Node object creation
-		node.data=data;
-		node.next=null;
-		
-		if(index==0) {
-			insertAtStart(data);
-		}
-		else {
-		Node n = head;                             //Traversing index
-		for(int i = 0 ;i<index-1;i++) {           //for loop for an index
-			n=n.next;		
-		}
-		node.next=n.next;
-		n.next=node;	
-		}
-	}
 
 	
 }
