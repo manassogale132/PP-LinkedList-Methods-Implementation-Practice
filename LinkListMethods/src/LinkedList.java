@@ -80,5 +80,6 @@ public class LinkedList {
 			n=n.next;
 		}
 		System.out.println(n.data);                    //Printing the last data outside the loop
+	
 	}
 }
