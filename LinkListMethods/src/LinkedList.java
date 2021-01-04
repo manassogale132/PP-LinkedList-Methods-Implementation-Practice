@@ -20,17 +20,6 @@ public class LinkedList {
 			n.next=node;
 		}	
 	}
-	
-	
-	public void insertAtStart(int data) {       //To insert at start of the list
-		
-		Node node = new Node();                  //Node object creation
-		node.data=data;
-		node.next=null;
-		
-		node.next=head;                         //Setting the node to head
-		head=node;	
-	}
 
 	
 }
