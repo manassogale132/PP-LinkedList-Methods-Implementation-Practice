@@ -51,24 +51,6 @@ public class LinkedList {
 		n.next=node;	
 		}
 	}
-	
-	
-    public void deleteAt(int index) {
-    	
-    	if(index == 0) {
-    		head=head.next;
-    	}
-    	else {
-    		Node n =head;                                //Traversing index
-    		Node n1=null;                                //temp node to be removed
-    		for(int i =0 ;i<index-1;i++) {
-    			n=n.next;  			
-    		}
-    		n1=n.next;
-    		n.next=n1.next;
-    	}
-		
-	}
 
 	
 }
